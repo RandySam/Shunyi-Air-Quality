@@ -2,24 +2,48 @@
 
 A **Streamlit** web app for **Exploratory Data Analysis (EDA)** on Air Quality data (PRSA Dataset - Shunyi District).
 
+---
+
 ## 📂 Project Overview
-This dashboard provides:
-- Interactive EDA visualizations
-- Time Series Decomposition (Seasonality, Trend, Residuals)
-- Clean, intuitive interface using Streamlit
+
+Dashboard ini dirancang untuk melakukan analisis eksploratif terhadap data kualitas udara di distrik Shunyi, Beijing. Beberapa fitur utama:
+
+- Visualisasi tren PM2.5 secara interaktif
+- Kategori kualitas udara harian dan per jam
+- Korelasi antara cuaca dan polusi (TEMP, WSPM, dll)
+- Visualisasi geospasial (lokasi acak di sekitar Shunyi)
+- Upload dataset langsung melalui UI Streamlit
 
 ---
 
-## 🚧 Dataset
-We're using the **PRSA Data Shunyi** dataset:
-- **Date Range:** 2013-03-01 to 2017-02-28
-- Features include air quality metrics (`PM2.5`, `PM10`, `SO2`, `NO2`, `CO`, `O3`) and meteorological variables (temperature, pressure, wind).
+## 📊 Dataset
 
-> **Dataset:** `PRSA_Data_Shunyi_20130301-20170228.csv`
+Aplikasi ini menggunakan dataset **PRSA Data Shunyi**, yang berisi data polusi udara dan parameter cuaca:
+
+- **Periode:** 1 Maret 2013 – 28 Februari 2017
+- **Fitur:** `PM2.5`, `PM10`, `SO2`, `NO2`, `CO`, `O3`, `TEMP`, `PRES`, `WSPM`, dan lainnya.
+
+> 🗂️ File yang dibutuhkan: `PRSA_Data_Shunyi_20130301-20170228.csv`  
+> File dapat di-upload melalui sidebar ketika aplikasi berjalan.
 
 ---
 
-## ✅ Prerequisites
-Make sure you have **Python 3.8+** installed.
-Install the required libraries by running `pip install -r requirements.txt` in your terminal.
-All and all, run `streamlit run Data_Analitik_Submission.py` in your terminal
+## ⚙️ Cara Menjalankan Proyek
+
+Pastikan kamu sudah memiliki **Python 3.8+**.
+
+Untuk menjalankan proyek ini:
+
+```bash
+# (Opsional) Buat virtual environment
+python -m venv venv
+# Aktifkan (Windows)
+venv\Scripts\activate
+# atau Aktifkan (Mac/Linux)
+source venv/bin/activate
+
+# Install dependensi
+pip install -r requirements.txt
+
+# Jalankan Streamlit app
+streamlit run Data_Analitik_Submission.py
