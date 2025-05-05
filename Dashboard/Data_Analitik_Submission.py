@@ -8,7 +8,7 @@ from shapely.geometry import Point
 import os
 
 # === Use relative path for dataset ===
-DATA_URL = "./Data/PRSA_Data_Shunyi_20130301-20170228.csv"
+DATA_URL = "Data/PRSA_Data_Shunyi_20130301-20170228.csv"
 
 # Check if file exists
 if not os.path.exists(DATA_URL):
@@ -16,12 +16,12 @@ if not os.path.exists(DATA_URL):
     st.error(f"Dataset not found at {DATA_URL}")
     st.write(f"Current working directory: {os.getcwd()}")
     # Try alternative path
-    alt_path = "Data/PRSA_Data_Shunyi_20130301-20170228.csv"
-    if os.path.exists(alt_path):
-        DATA_URL = alt_path
-        st.success(f"Found dataset at alternative path: {alt_path}")
-    else:
-        st.stop()
+    # alt_path = "Data/PRSA_Data_Shunyi_20130301-20170228.csv"
+    # if os.path.exists(alt_path):
+    #     DATA_URL = alt_path
+    #     st.success(f"Found dataset at alternative path: {alt_path}")
+    # else:
+    #     st.stop()
         
 DATA_URL = DATA_URL
 
