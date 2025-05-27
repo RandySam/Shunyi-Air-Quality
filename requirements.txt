@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 matplotlib==3.10.3
 pandas==2.2.3
 seaborn==0.13.2
 streamlit==1.40.1
+=======
+streamlit>=1.30.0
+pandas>=1.5.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+geopandas>=0.12.0
+shapely>=2.0.0
+pyproj>=3.4.0
+fiona>=1.8.20
+pytz
+>>>>>>> da81caeb8357d6d88e0c2efa809e178f1480a5f3
